@@ -28,8 +28,5 @@ export default {
     textAlign: 'right',
     float: 'right',
     width: '100px'
-  },
-  appLogo: {
-    align: 'center'
   }
 };

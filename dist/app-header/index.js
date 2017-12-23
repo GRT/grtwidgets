@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import logo from '../../static/logo.svg';
 import headerStyles from './app-header-styles';
 
 class AppHeader extends Component {
@@ -20,11 +19,6 @@ class AppHeader extends Component {
           ' ',
           title,
           ' '
-        ),
-        React.createElement(
-          'p',
-          { style: _.get(headerStyles, 'appLogo') },
-          React.createElement('img', { src: logo, alt: 'logo' })
         ),
         React.createElement(
           'div',

@@ -9,7 +9,6 @@
     "build": "babel --plugins transform-react-jsx lib --out-dir dist",
     "unit": "mocha"
   },
-  "prepublish": "npm run build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GRT/grtwidgets.git"
