@@ -6,8 +6,10 @@
   "scripts": {
     "test": "npm run lint && npm run unit",
     "lint": "eslint lib",
+    "build": "babel --plugins transform-react-jsx lib --out-dir dist",
     "unit": "mocha"
   },
+  "prepublish": "npm run build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GRT/grtwidgets.git"
@@ -25,6 +27,8 @@
     "url": "https://github.com/GRT/grtwidgets/issues"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",

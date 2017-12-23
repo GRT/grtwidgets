@@ -1,4 +1,4 @@
 module.exports = {
-  AppHeader: require('./lib/app-header').default,
-  MultipleChoice: require('./lib/multiple-choice').default
+  AppHeader: require('./dist/app-header').default,
+  MultipleChoice: require('./dist/multiple-choice').default
 };
