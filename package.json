@@ -1,6 +1,6 @@
 {
   "name": "grtwidgets",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Some widgets that are React components",
   "main": "index.js",
   "scripts": {
