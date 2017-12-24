@@ -17,8 +17,6 @@ class AnswerOption extends React.Component {
     };
   }
 
-
-
   componentWillReceiveProps(nextProps) {
     const { answer, selection } = nextProps;
     this.setState({ selected: _.isEqual(answer, selection) });

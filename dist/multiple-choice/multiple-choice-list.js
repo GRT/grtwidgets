@@ -12,6 +12,10 @@ class MultipleChoice extends React.Component {
     this.renderAnswerOptions = this.renderAnswerOptions.bind(this);
     this.handleSelection = this.handleSelection.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.state = {
+      answerOption: '',
+      answerIndex: -1
+    };
   }
 
   handleSelection(selection) {
