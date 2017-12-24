@@ -17,8 +17,11 @@ class AnswerOption extends React.Component {
     };
   }
 
+
+
   componentWillReceiveProps(nextProps) {
-    this.setState({ selected: _.isEqual(_.get(nextProps, 'answer'), _.get(nextProps, 'selection')) });
+    const { answer, selection } = nextProps;
+    this.setState({ selected: _.isEqual(answer, selection) });
   }
 
   clickHandler() {
