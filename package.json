@@ -7,7 +7,8 @@
     "test": "npm run lint && npm run unit",
     "lint": "eslint lib",
     "build": "babel --plugins transform-react-jsx lib --out-dir dist",
-    "unit": "mocha"
+    "unit": "mocha",
+    "shipit": "npm build && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
