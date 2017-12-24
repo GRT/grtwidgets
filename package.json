@@ -8,7 +8,7 @@
     "lint": "eslint lib",
     "build": "babel --plugins transform-react-jsx lib --out-dir dist",
     "unit": "mocha",
-    "shipit": "npm build && npm version patch && npm publish"
+    "shipit": "npm build && npm version patch && npm publish & git push"
   },
   "repository": {
     "type": "git",
